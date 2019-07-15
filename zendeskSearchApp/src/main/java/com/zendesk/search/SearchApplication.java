@@ -8,11 +8,15 @@ import com.zendesk.search.components.DataSourceImp;
 /**
  * Zendesk Search Application
  * 
- * Requirement
+ * Functions
  * 1) Input files: users.json tickets.json organizations.json
+ * 
  * 2) Load data
- * 3) Store in memeory
+ * 
+ * 3) Store data in memory
+ * 
  * 4) Provide search interfaces
+ * 
  * 5) Command line UI
  * 
  * @author shiguangli
@@ -21,7 +25,6 @@ import com.zendesk.search.components.DataSourceImp;
 public class SearchApplication {
 
 	DataSourceImp datasource;
-	
 	CommandHandler cmdHandler;
 	
 	public void init() {
@@ -35,7 +38,7 @@ public class SearchApplication {
 	
 	public void start() {
 		
-		// Start the UI to take innput
+		// Start the UI to take user innput
 		System.out.println("**************************************************");
 		System.out.println("* Welcome to Zendesk Search !");
 		System.out.println("* ");

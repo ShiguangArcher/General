@@ -20,6 +20,24 @@ import com.zendesk.search.interfaces.SearchableGroup;
 import com.zendesk.search.query.CorrelatedAttribute;
 import com.zendesk.search.query.QueryType;
 
+/**
+ * Data source
+ * 
+ * 1) Load JSON files as GROUPs into the CorrelatedGroup
+ * 
+ * 2) Provide registration for all the CorrelatedGroup and 
+ *    can be used to search the CorrelatedGroup
+ *    
+ * 3) Conigure the Correlation between different CorrelatedGroup
+ *    to provide the cross group data searching
+ *    
+ * 4) Search entry will foward the query to each CorrelatedGroup
+ * 
+ * 5) List Groups and Attributes of the group
+ * 
+ * @author shiguangli
+ *
+ */
 public class DataSourceImp implements DataSource, CommandActor{
 	
 	private String dataPropertiesFile="config.properties";

@@ -4,6 +4,21 @@ import java.util.StringTokenizer;
 
 import com.zendesk.search.interfaces.CommandActor;
 
+/**
+ * Command Handler
+ * 
+ * Handle the user's input
+ * 	1) help  - provide the instructions
+ * 
+ * 	2) list  - list the available groups
+ * 
+ * 	3) list groupName  - list the attribute of the group
+ * 
+ * 	4) foward the search query to the datasource
+ * 
+ * @author shiguangli
+ *
+ */
 public class CommandHandler {
 	
 	private final String HELP="help";

@@ -15,6 +15,23 @@ import com.zendesk.search.query.Attribute;
 import com.zendesk.search.query.CorrelatedAttribute;
 import com.zendesk.search.util.OutputFormatter;
 
+/**
+ * SearchableGroup
+ * 
+ * 	1) Store loaded JSON file as _id based data map 
+ * 
+ * 	2) Store correlations to othere groups
+ * 
+ *  3) Search functions 
+ *  	- id search
+ *  	- one attribute search
+ *  	- multiple attributes search
+ *  
+ *  4) Provide correlated search results to correlated groups
+ * 
+ * @author shiguangli
+ *
+ */
 public class SearchableGroupImp implements CorrelatedSearchableGroup{
 
 	private final String default_search_key="_id";

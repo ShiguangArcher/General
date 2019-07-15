@@ -18,6 +18,9 @@ import com.zendesk.search.query.QueryType;
  * 
  * 2) "groupName, attributeName, attributeValue"
  * 
+ * 3) Repeated attributes :
+ * 	  "groupName, [attributeName, attributeValue,]"
+ * 
  * @author shiguangli
  *
  */
